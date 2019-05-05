@@ -1,19 +1,21 @@
 {
-  "name": "helloworld",
-  "displayName": "HelloCordova",
-  "version": "1.0.0",
-  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "name": "timeline",
+  "displayName": "Timeline",
+  "version": "0.1.0",
+  "description": "A Simple Time Manager",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "ecosystem:cordova"
+    "timeline"
   ],
-  "author": "Apache Cordova Team",
-  "license": "Apache-2.0",
+  "author": "ibuky",
+  "license": "MIT",
   "dependencies": {
     "cordova-android": "^8.0.0",
+    "cordova-sqlite-storage": "3.2.0",
+    "jquery": "^3.4.1",
     "onsenui": "^2.10.8"
   },
   "devDependencies": {
@@ -21,7 +23,8 @@
   },
   "cordova": {
     "plugins": {
-      "cordova-plugin-whitelist": {}
+      "cordova-plugin-whitelist": {},
+      "cordova-sqlite-storage": {}
     },
     "platforms": [
       "android"

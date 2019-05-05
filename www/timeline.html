@@ -1,0 +1,32 @@
+<ons-page id="timeline.html">
+  <ons-toolbar>
+    <div class="center">Timeline</div>
+    <div class="right"><ons-button id="delete-all" modifier="quiet">delete all</ons-button></div>
+  </ons-toolbar>
+
+  <div id="timeline" class="timeline"></div>
+  <ons-bottom-toolbar>
+    <div class="bottom-toolbar">
+      <ons-input id="time" type="time"></ons-input>
+      <ons-input id="content" type="text"></ons-input>
+      <ons-button id="submit" modifier="quiet"><ons-icon icon="fa-paper-plane" size="28px"></ons-icon></ons-button>
+    </div>
+  </ons-bottom-toolbar>
+
+  <!-- one timeline card -->
+  <template id="temp-timeline">
+    <ons-card>
+      <div class="title"></div>
+      <div class="content"></div>
+    </ons-card>
+  </template>
+  
+  <template id="temp-no-data">
+    <div class="no-data">
+      <div class="no-data-content">
+        <ons-icon icon="fa-clock-o" size="48px"></ons-icon>
+        <p>no schedule now!</p>
+      </div>
+    </div>
+  </template>
+</ons-page>
